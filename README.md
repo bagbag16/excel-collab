@@ -1,3 +1,6 @@
+<!-- Language switch -->
+**English** | [中文](./README.zh.md)
+
 # excel-collab
 
 **Safety rules for Excel work where workbooks are data, logic, output, and review surface at once.**
