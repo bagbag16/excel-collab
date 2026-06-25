@@ -1,0 +1,4 @@
+interface:
+  display_name: "Excel Collab"
+  short_description: "Safe workbook read/write workflow"
+  default_prompt: "Use -collab to inspect this workbook, confirm the active sheet and data contract, make the requested change, and validate the result."
