@@ -15,13 +15,13 @@ Excel 工作会安静地失败,因为 workbook 很少只是一个文件。它可
 
 ```mermaid
 flowchart TD
-  T["Excel task"] --> C["Classify behavior + object tags"]
-  C --> A["Active workbook contract"]
-  A --> P["Precheck locks, formulas, macros, human edits"]
-  P --> E["Read / edit / derive / repair"]
-  E --> V["Validate by readback"]
-  V -->|"pass"| D["Deliver with evidence"]
-  V -->|"fail"| R["Repair or roll back"]
+  T["Excel 任务"] --> C["识别操作类型与对象标签"]
+  C --> A["确认当前工作簿契约"]
+  A --> P["预检锁定、公式、宏与人工改动"]
+  P --> E["读取 / 编辑 / 派生 / 修复"]
+  E --> V["回读验证"]
+  V -->|"通过"| D["带证据交付"]
+  V -->|"失败"| R["修复或回滚"]
 ```
 
 > **设计立场:** 除非用户明确把 Excel 作为状态根,否则 Excel 默认是审阅和交付表面。
